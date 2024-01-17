@@ -7,7 +7,7 @@
     font-family: 'Mulish', sans-serif;  
 }
 .common-padding{
-    padding:0 80px;
+    padding:0 100px;
 }
 
 .nav{
@@ -85,7 +85,54 @@
     width: 150px;
 }
 
-#findNowForm .form-inner button {
+/* #findNowForm .form-inner button {
     background-color: #FF5400;
     color: #fff;
+} */
+button {
+    background-color: #FF5400;
+    color: #fff;
+}
+
+.popular{
+    display: flex;
+    padding-top: 80px ;
+    /* padding-bottom: 50px ; */
+    height: 650px;
+}
+
+.popular-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular-card, .popular-image-wrapper{
+    width: 50%;
+}
+
+.popular-title {
+    font-size: 30px;
+}
+
+.popular-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular .popular-card ul{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.popular-card p, .popular-card ul {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.popular-image-wrapper{
+    height: 100%;
 }
