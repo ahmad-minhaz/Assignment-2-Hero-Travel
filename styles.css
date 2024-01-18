@@ -339,3 +339,39 @@ button {
     rotate: -30deg;
     border-radius: 15px;
 }
+
+footer {
+    background-color: #1313180D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 130px 
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+footer div h3 span {
+    color: #FF5400
+}
+
+footer p {
+    width: 550px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+footer hr {
+    border: 1px solid #1313181A;
+    width: 800px;
+    margin: 40px 0;
+}
