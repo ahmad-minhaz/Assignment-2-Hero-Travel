@@ -12,6 +12,49 @@
 
 .nav{
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, nav {
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h3 {
+    margin-left: 5px;
+}
+
+.logo h3 span {
+    color:#FF5400
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: #FF5400;
+    font-weight: 800;
+}
+
+.active {
+    color: #FF5400;
+    font-weight: 800;
+}
+
+.hamburger {
+    display: none;
 }
 
 .banner{
@@ -253,6 +296,61 @@ button {
     background-color: #29CEF633;
 }
 
+/* Get Lost Section */
+
+.lost{
+    display: flex;
+    padding-top: 80px ;
+    /* padding-bottom: 50px ; */
+    height: 450px;
+    width: 100%;
+}
+
+.lost-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.lost-card, .lost-image-wrapper{
+    width: 50%;
+}
+
+.section-title {
+    font-size: 30px;
+}
+
+.lost-video-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.lost-video {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.lost .lost-card ul{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lost-card p, .lost-card ul {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.lost-image-wrapper{
+    height: 100%;
+}
+
 /* contact section */
 .contact{
     display: flex;
@@ -374,4 +472,121 @@ footer hr {
     border: 1px solid #1313181A;
     width: 800px;
     margin: 40px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    /* .mobile-nav {
+        display: block;
+    } */
+    .banner {
+        height: 90vh;
+    }
+    .common-padding{
+        padding:0 20px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .main-title {
+        font-size: 22px;
+    }
+    .short-des {
+        font-size: 14px;
+        width: 330px;
+        font-weight: 400;
+    }
+    .form-inner {
+        width: auto;
+        flex-direction: column;
+        height: 250px;
+    }
+    #findNowForm .form-inner input, select, button {
+        padding: 12px 10px;
+        border-radius: 5px;
+        border: none;
+        width: 350px;
+    }
+
+    .popular, .lost, .contact{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        height: auto;
+        width: 100%;
+    }
+    .popular-card, .popular-image-wrapper, .lost-card, .lost-video-wrapper, .contact-card, .contact-image-wrapper{
+        width: 100%;
+    }
+    .popular-button, .lost-button {
+        width: 200px;
+        /* margin-left: auto; */
+        margin-right: auto;
+        margin-top: 30px
+    }
+    .popular-image-wrapper, .lost-video-wrapper, .contact-image-wrapper {
+        margin-top: 20px;
+    }
+
+    .destination {
+        padding-top: 30px;
+    }
+    .destination-image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+
+    }
+    .destination-image-grid > div {
+        width: 100%;
+    }
+
+    .destination-top p, .choose-top p {
+        width: auto;
+        margin: 30px auto;
+    }
+    
+    .service-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .service-wrapper div {
+        width: 100%;
+    }
+
+    .choose {
+        padding-top: 30px;
+    }
+
+    footer div h3 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-left: 5px;
+    }
+    
+    footer div h3 span {
+        color: #FF5400
+    }
+    
+    footer p {
+        text-align: center;
+        margin: 40px 0;
+        width: 300px;
+        font-size: 14px;
+    }
+    
+    footer hr {
+        border: 1px solid #1313181A;
+        width: 100%;
+        margin: 40px 0;
+    }
+    footer div {
+        margin-top: 80px
+    }
 }
